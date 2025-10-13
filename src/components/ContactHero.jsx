@@ -4,7 +4,7 @@ import contactBanner from '../assets/contactBanner.jpg';
 const ContactHero = () => {
   return (
     <section
-      className="relative bg-cover bg-center h-[50vh] flex items-center justify-center"
+      className="relative bg-cover bg-center h-[30vh] flex items-center justify-center"
       style={{
         backgroundImage: `url(${contactBanner})`,
       }}
