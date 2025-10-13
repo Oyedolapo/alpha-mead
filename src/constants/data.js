@@ -11,6 +11,59 @@ import ekow from "../assets/ekow-300x300.jpg";
 
 import { FaTwitter, FaLinkedinIn, FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
 
+export const menuItems = [
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "/about-us" },
+    {
+      name: "Our Services",
+      href: "#",
+      dropdown: {
+        businesses: [
+          { name: "Facilities Management (AMF)", href: "/facilities" },
+          { name: "Training services (AMTC)", href: "/development" },
+          { name: "Real Estate Development (AMDC)", href: "/healthcare" },
+          { name: "Power Solutions", href: "https://alphameadpartners.com/" },
+          { name: "Property Technology Solutions (PropTech)", href: "https://alphameadtraining.com/" },
+          { name: "Healthcare", href: "/bridge-financing" },
+        ]
+      },
+    },
+    {
+      name: "Int'l Business",
+      href: "#",
+      dropdown: {
+        businesses: [
+          { name: "Ghana", href: "/facilities" },
+          { name: "Cameroon", href: "/development" },
+          { name: "Senegal", href: "/healthcare" },
+          { name: "South Africa", href: "/healthcare" },
+          { name: "Kenya", href: "/healthcare" },
+          { name: "Guinea Conakry", href: "/healthcare" },
+          { name: "Rwanda", href: "/healthcare" },
+          { name: "Côte d'Ivoire", href: "/healthcare" },
+          { name: "Ethiopia", href: "/healthcare" },
+          { name: "Tanzania", href: "/healthcare" },
+          { name: "Botswana", href: "/healthcare" },
+          { name: "UAE", href: "/healthcare" },
+          { name: "Benin Republic", href: "/healthcare" },
+        ],
+      },
+    },
+    {
+      name: "Media & Events",
+      href: "#",
+      dropdown: {
+        businesses: [
+          { name: "Corporate News", href: "/events" },
+          { name: "Corporate Events", href: "/events" },
+          { name: "Blogs", href: "/events" },
+          { name: "Publications", href: "/media" },
+        ],
+      },
+    },
+    { name: "Contact Us", href: "/contact-us" },
+];
+
 
 export const boardOfDirectors = [
   { name: "Mutiu Sunmonu, CON", title: "Chairman", image: mutiu, link: "/leadership/mutiu-sunmonu" },

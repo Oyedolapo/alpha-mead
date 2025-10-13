@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
-import { Footer, Navbar } from "../components";
+import { Footer, Header } from "../components";
 import { leaders } from "../constants/data";
 
 const LeaderDetails = () => {
@@ -18,7 +18,7 @@ const LeaderDetails = () => {
 
   return (
     <>
-        <Navbar />
+        <Header />
         <section className="min-h-screen bg-gray-50 py-16 px-6 md:px-12 lg:px-24 font-roboto pt-[10rem] md:pt-[11rem] lg:pt-[12rem]">
             <button
                 onClick={() => navigate("/about-us", { state: { tabIndex: 1 } })}

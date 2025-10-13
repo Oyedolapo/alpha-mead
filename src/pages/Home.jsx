@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import {
   Footer,
+  Header,
   HeroSlider,
   HowWeMakeDifference,
-  Navbar,
   OurRealDifference,
   RealInsights,
   Testimonials,
@@ -53,7 +53,7 @@ const Home = () => {
 
   return (
     <section className="font-roboto relative">
-      <Navbar />
+      <Header />
       <main style={{ marginTop: navbarHeight }}>
         <div id="hero">
           <HeroSlider />

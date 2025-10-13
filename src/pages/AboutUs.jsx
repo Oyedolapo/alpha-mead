@@ -1,10 +1,10 @@
 import React from "react";
-import { AboutHero, AboutTabs, Footer, Navbar } from "../components";
+import { AboutHero, AboutTabs, Footer, Header } from "../components";
 
 const AboutUs = () => {
     return (
         <section className="font-roboto">
-            <Navbar />
+            <Header />
             <main className="pt-[10rem] md:pt-[11rem] lg:pt-[12rem]">
                 <AboutHero />
                 <AboutTabs />

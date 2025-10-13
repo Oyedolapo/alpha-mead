@@ -6,7 +6,7 @@ import Slider1 from "../assets/Slider1.jpg";
 import Slider2 from "../assets/Slider-2.png";
 import Slider3 from "../assets/Slider-3.png";
 import Slider4 from "../assets/Slider4.jpg";
-import Slider5 from "../assets/Slider5.jpg";
+import Slider5 from "../assets/Slider5.png";
 
 const slides = [
   {

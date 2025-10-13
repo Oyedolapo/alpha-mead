@@ -1,4 +1,4 @@
-import Navbar from "./Navbar";
+import Header from "./Header/Header";
 import HeroSlider from "./HeroSlider";
 import HowWeMakeDifference from "./HowWeMakeDifference";
 import OurRealDifference from "./OurRealDifference";
@@ -24,7 +24,7 @@ import ContactMap from "./ContactMap";
 import Footer from "./Footer";
 
 export {
-    Navbar,
+    Header,
     HeroSlider,
     HowWeMakeDifference,
     OurRealDifference,

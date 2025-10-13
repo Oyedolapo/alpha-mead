@@ -1,10 +1,10 @@
 import React from "react";
-import { ContactForm, ContactHero, ContactMap, Footer, Navbar } from "../components";
+import { ContactForm, ContactHero, ContactMap, Footer, Header } from "../components";
 
 const ContactUs = () => {
     return (
         <section className="font-roboto">
-            <Navbar />
+            <Header />
             <main className="pt-[10rem] md:pt-[11rem] lg:pt-[12rem]">
                 <ContactHero />
                 <ContactForm />
