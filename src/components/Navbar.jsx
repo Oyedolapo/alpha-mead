@@ -60,8 +60,8 @@ const Header = () => {
         businesses: [
           { name: "Corporate News", href: "/events" },
           { name: "Corporate Events", href: "/events" },
-          { name: "Blos", href: "/events" },
-          { name: "Scanned News Publications", href: "/media" },
+          { name: "Blogs", href: "/events" },
+          { name: "Publications", href: "/media" },
         ],
       },
     },
