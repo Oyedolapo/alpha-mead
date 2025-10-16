@@ -9,8 +9,8 @@ const ContactForm = () => {
     return (
         <section className="py-16 px-6 md:px-12 lg:px-24 bg-gray-50 text-gray-800">
             <div className="text-center mb-10">
-                <h2 className="text-4xl font-semibold mb-4">Get in Touch</h2>
-                <p className="text-lg text-gray-600">
+                <h2 className="text-3xl font-semibold mb-4">Get in Touch</h2>
+                <p className="text-base text-gray-600">
                     Please select the category that best fits your enquiry.
                 </p>
             </div>
@@ -19,7 +19,7 @@ const ContactForm = () => {
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-10">
                 <button
                     onClick={() => setActiveForm("general")}
-                    className={`px-6 py-3 rounded-lg font-medium border transition-all ${
+                    className={`px-4 py-2 text-sm rounded-lg font-medium border transition-all ${
                         activeForm === "general"
                         ? "bg-green-600 text-white"
                         : "bg-white text-gray-700 border-gray-300 hover:bg-green-50"
@@ -30,7 +30,7 @@ const ContactForm = () => {
 
                 <button
                     onClick={() => setActiveForm("vendor")}
-                    className={`px-6 py-3 rounded-lg font-medium border transition-all ${
+                    className={`px-4 py-2 text-sm rounded-lg font-medium border transition-all ${
                         activeForm === "vendor"
                         ? "bg-green-600 text-white"
                         : "bg-white text-gray-700 border-gray-300 hover:bg-green-50"
@@ -41,7 +41,7 @@ const ContactForm = () => {
 
                 <button
                     onClick={() => setActiveForm("employment")}
-                    className={`px-6 py-3 rounded-lg font-medium border transition-all ${
+                    className={`px-4 py-2 text-sm rounded-lg font-medium border transition-all ${
                         activeForm === "employment"
                         ? "bg-green-600 text-white"
                         : "bg-white text-gray-700 border-gray-300 hover:bg-green-50"

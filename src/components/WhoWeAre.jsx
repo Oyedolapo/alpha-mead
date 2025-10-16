@@ -1,8 +1,8 @@
 
 const WhoWeAre = () => (
     <div>
-        <h2 className="text-3xl lg:text-5xl font-light text-gray-800 mb-6">Who We Are</h2>
-        <div className="space-y-4 text-gray-700 text-lg">
+        <h2 className="text-3xl md:text-4xl font-light text-gray-800 mb-6">Who We Are</h2>
+        <div className="space-y-4 text-gray-700 text-sm">
             <p className="text-justify">
                 Alpha Mead Group is a Total Real Estate Solutions Company established to provide robust business support services to local and international Real Estate investors or owners with interests in Facilities Management, Real Estate Development and Advisory, Security Systems and Technologies, Training, Healthcare Management and Real Estate Financing Services.
             </p>

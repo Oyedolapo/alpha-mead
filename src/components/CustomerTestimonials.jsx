@@ -24,14 +24,14 @@ const CustomerTestimonials = () => {
     };
 
     return (
-        <section className="py-16 px-6 md:px-12 lg:px-24 bg-gray-50 font-roboto">
+        <section className="py-6 px-3 md:px-12 bg-gray-50 font-roboto">
             {/* Heading */}
-            <h2 className="text-4xl font-light text-gray-800 mb-10 text-left">
+            <h2 className="text-2xl md:text-4xl font-light text-gray-800 mb-7 text-left">
                 Customers and Testimonials
             </h2>
 
             {/* Description */}
-            <p className="text-gray-700 text-lg mb-12 text-left max-w-3xl">
+            <p className="text-gray-700 text-sm mb-12 text-left max-w-3xl">
                 We recognize that Real Estate and Infrastructure are beyond buildings
                 and structures. For us, making real difference means ensuring assets are
                 safe, comfortable, and sustainable — and that healthcare and
@@ -64,7 +64,7 @@ const CustomerTestimonials = () => {
                     href="https://youtube.com/@alphameadgroup3747?si=Bp9lcrV3fas4l8tn"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-medium transition-all shadow-md"
+                    className="bg-green-600 hover:bg-green-700 text-white px-5 py-2 text-sm rounded-lg font-medium transition-all shadow-md"
                 >
                     Click to watch more
                 </a>
@@ -72,21 +72,21 @@ const CustomerTestimonials = () => {
 
             {/* Testimonials Section */}
             <div className="max-w-5xl mx-auto text-center">
-                <h3 className="text-3xl font-semibold text-green-700 mb-8">
+                <h3 className="text-2xl font-semibold text-green-700 mb-8">
                     What Our Customers Say
                 </h3>
 
                 {/* Testimonials Display */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-10">
                     {visibleTestimonials.map((t, index) => (
                         <div
                             key={index}
-                            className="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition flex flex-col justify-between h-[320px]"
+                            className="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition flex flex-col justify-between min-h-[250px]"
                         >
-                            <p className="text-gray-700 italic mb-4 text-xl leading-relaxed line-clamp-6">
+                            <p className="text-gray-700 italic mb-4 text-sm leading-relaxed">
                                 “{t.feedback}”
                             </p>
-                            <p className="text-green-700 font-semibold text-right mt-auto">
+                            <p className="text-green-700 font-semibold text-sm text-right mt-auto">
                                 — {t.name}
                             </p>
                         </div>
@@ -97,7 +97,7 @@ const CustomerTestimonials = () => {
                 <div className="flex justify-center items-center gap-6">
                     <button
                         onClick={handlePrev}
-                        className="px-5 py-2 bg-gray-200 rounded-full hover:bg-gray-300 transition"
+                        className="px-5 py-2 bg-gray-200 text-sm rounded-full hover:bg-gray-300 transition"
                     >
                         ← Prev
                     </button>
@@ -106,7 +106,7 @@ const CustomerTestimonials = () => {
                             <button
                                 key={i}
                                 onClick={() => setCurrentPage(i)}
-                                className={`w-3 h-3 rounded-full transition ${
+                                className={`w-2 h-2 rounded-full transition ${
                                 i === currentPage ? "bg-green-600" : "bg-gray-300"
                                 }`}
                             />
@@ -114,7 +114,7 @@ const CustomerTestimonials = () => {
                     </div>
                     <button
                         onClick={handleNext}
-                        className="px-5 py-2 bg-gray-200 rounded-full hover:bg-gray-300 transition"
+                        className="px-5 py-2 bg-gray-200 text-sm rounded-full hover:bg-gray-300 transition"
                     >
                         Next →
                     </button>

@@ -4,8 +4,8 @@ import PolicyCard from "./PolicyCard";
 const CorporatePolicies = () => {
     return (
         <div>
-            <h2 className="text-5xl font-light text-gray-800 mb-6">Policies & Standards</h2>
-            <div className="space-y-6 text-lg">
+            <h2 className="text-2xl md:text-4xl font-light text-gray-800 mb-6">Policies & Standards</h2>
+            <div className="space-y-6 text-sm text-gray-700">
                 <p className="text-justify">
                     Alpha Mead Group has a well-defined set of policies and processes for administrative, operational and human resource purposes. The processes are well understood and adhered to by every employee. The Quality Assurance team ensures 100 percent compliance with the Quality Management Systems (QMS) and International Standard Organization (ISO) requirements as they relate to processes, systems and procedures.
                 </p>

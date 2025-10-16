@@ -5,7 +5,7 @@ const AboutUs = () => {
     return (
         <section className="font-roboto">
             <Header />
-            <main className="pt-[10rem] md:pt-[11rem] lg:pt-[12rem]">
+            <main className="pt-[7rem]">
                 <AboutHero />
                 <AboutTabs />
             </main>

@@ -10,14 +10,14 @@ const Testimonials = () => {
 
   return (
     <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-10">
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-gray-800 mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-light text-gray-800 mb-6">
             What Our Customers Say About Our Real Difference
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
           {videos.map((video, index) => (
             <div 
               key={index} 
@@ -40,7 +40,7 @@ const Testimonials = () => {
             href="https://youtube.com/@alphameadgroup3747?si=50ptalVOt5cXdTP1"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#71bf4f] hover:bg-green-600 text-white px-10 py-4 rounded text-lg inline-block transition-colors"
+            className="bg-[#71bf4f] hover:bg-green-600 text-white px-8 py-3 rounded text-base inline-block transition-colors"
           >
             VIEW MORE
           </a>

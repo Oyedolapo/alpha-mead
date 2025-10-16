@@ -2,44 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import Slider1 from "../assets/Slider1.jpg";
-import Slider2 from "../assets/Slider-2.png";
-import Slider3 from "../assets/Slider-3.png";
-import Slider4 from "../assets/Slider4.jpg";
-import Slider5 from "../assets/Slider5.png";
-
-const slides = [
-  {
-    image: Slider1,
-    title: "",
-    description: "",
-    overlay: false, // 👈 Image only
-  },
-  {
-    image: Slider2,
-    title: "ENDLESS POSSIBILITIES THAT GIVE YOU AN EDGE",
-    description: "Capabilities that support you for Real Difference.",
-    overlay: true,
-  },
-  {
-    image: Slider3,
-    title: "RECOGNIZED AS COMPANY TO INSPIRE AFRICA.",
-    description: "Partner with us to unlock meaningful and measurable results.",
-    overlay: true,
-  },
-  {
-    image: Slider4,
-    title: "LOCAL CAPACITY ACROSS AFRICA.",
-    description: "International Standards that support you",
-    overlay: true,
-  },
-  {
-    image: Slider5,
-    title: "POWERING POSSIBILITIES",
-    description: "From real estate to facility services, we develop, manage, and empower environments where people and possibilities flourish.",
-    overlay: true,
-  },
-];
+import { slides } from "../constants/data";
 
 const HeroSlider = () => {
   const [current, setCurrent] = useState(0);
@@ -57,13 +20,13 @@ const HeroSlider = () => {
     setCurrent((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
 
   return (
-    <section className="relative w-full h-[60vh] md:h-[80vh] lg:h-[90vh] overflow-hidden">
+    <section className="relative w-full h-[50vh] md:h-[80vh] lg:h-[90vh] overflow-hidden">
       {/* ✅ Static image background */}
       <div className="absolute inset-0">
         <img
           src={slides[current].image}
           alt={slides[current].title || `Slide ${current + 1}`}
-          className="w-full h-full object-cover select-none transition-opacity duration-1000 ease-in-out"
+          className="w-full h-full object-cover object-top select-none transition-opacity duration-1000 ease-in-out"
         />
       </div>
 
@@ -83,7 +46,7 @@ const HeroSlider = () => {
               initial={{ y: 30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
-              className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold mb-4 font-century-gothic leading-tight max-w-3xl"
+              className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 font-century-gothic leading-tight max-w-3xl"
             >
               {slides[current].title}
             </motion.h1>
@@ -92,7 +55,7 @@ const HeroSlider = () => {
               initial={{ y: 30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
-              className="text-base sm:text-lg md:text-xl max-w-2xl mb-6 text-gray-100"
+              className="text-sm sm:text-lg md:text-xl lg:text-sm max-w-2xl mb-6 text-gray-100"
             >
               {slides[current].description}
             </motion.p>

@@ -1,14 +1,7 @@
 import { useEffect, useState } from "react";
-import {
-  Footer,
-  Header,
-  HeroSlider,
-  HowWeMakeDifference,
-  OurRealDifference,
-  RealInsights,
-  Testimonials,
-  WhereWeMakeDiff,
-} from "../components";
+import { Footer, Header, HeroSlider, HowWeMakeDifference, OurRealDifference, RealInsights, Testimonials, WhereWeMakeDiff, } from "../components";
+import { sections } from "../constants/data";
+import { RxCaretUp } from "react-icons/rx";
 
 const Home = () => {
   const [navbarHeight, setNavbarHeight] = useState(0);
@@ -36,15 +29,7 @@ const Home = () => {
     return () => window.removeEventListener("scroll", toggleButton);
   }, []);
 
-  const sections = [
-    { id: "hero", label: "Home" },
-    { id: "how-we-make-difference", label: "How We Make Difference" },
-    { id: "our-real-difference", label: "Our Real Difference" },
-    { id: "where-we-make-diff", label: "Where We Make Difference" },
-    { id: "testimonials", label: "Testimonials" },
-    { id: "real-insights", label: "Real Insights" },
-    { id: "footer", label: "Contact / Footer" },
-  ];
+ 
 
   const scrollToSection = (id) => {
     const el = document.getElementById(id);
@@ -59,10 +44,10 @@ const Home = () => {
           <HeroSlider />
         </div>
 
-        <div className="pt-30 lg:pt-40">
-          <section id="how-we-make-difference">
+        <div className="pt-10">
+          {/* <section id="how-we-make-difference">
             <HowWeMakeDifference />
-          </section>
+          </section> */}
 
           <section id="our-real-difference">
             <OurRealDifference />
@@ -83,7 +68,7 @@ const Home = () => {
       </main>
 
       {/* Right-side black navigator */}
-      <div className="fixed right-10 top-1/2 -translate-y-1/2 flex flex-col items-center space-y-10 z-40 bg-black/40 py-3 px-4 rounded-3xl">
+      <div className="fixed right-10 top-[65%] -translate-y-1/2 flex flex-col items-center space-y-10 z-40 bg-black/40 py-3 px-3 rounded-3xl">
         {sections.map((section, index) => (
           <button
             key={index}
@@ -91,7 +76,7 @@ const Home = () => {
             className="relative w-4 h-4 rounded-full bg-white/30 opacity-60 hover:opacity-100 transition duration-300 cursor-pointer group"
             aria-label={section.label}
           >
-            <span className="absolute left-6 top-1/2 -translate-y-1/2 -translate-x-full opacity-0 group-hover:opacity-100 bg-black text-white text-base px-3 py-2 rounded whitespace-nowrap transition duration-300">
+            <span className="absolute left-6 top-1/2 -translate-y-1/2 -translate-x-full opacity-0 group-hover:opacity-100 bg-black text-white text-xs px-3 py-2 rounded whitespace-nowrap transition duration-300">
               {section.label}
             </span>
           </button>
@@ -104,15 +89,7 @@ const Home = () => {
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         className="hidden fixed bottom-6 right-6 bg-white border border-gray-300 shadow-lg rounded-full p-3 text-gray-700 hover:text-white hover:bg-green-600 transition duration-300 z-50"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
-        </svg>
+        <RxCaretUp className="h-5 w-5"/>
       </button>
 
       <section id="footer">

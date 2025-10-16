@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 const EmploymentForm = () => {
   const [formData, setFormData] = useState({
@@ -8,6 +8,8 @@ const EmploymentForm = () => {
     position: "",
     resume: null,
   });
+
+  const fileInputRef = useRef(null);
 
   const handleChange = (e) => {
     const { name, value, files } = e.target;
@@ -19,6 +21,10 @@ const EmploymentForm = () => {
     console.log("Employment form submitted:", formData);
   };
 
+  const handleFileButtonClick = () => {
+    fileInputRef.current.click();
+  };
+
   return (
     <section className="bg-[#EEF2F3] py-20 px-6 md:px-10 font-roboto w-full">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full items-start">
@@ -27,15 +33,15 @@ const EmploymentForm = () => {
           <h4 className="text-green-600 tracking-widest font-semibold uppercase mb-2">
             Careers
           </h4>
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
             Join the Alpha Mead Team
           </h2>
-          <p className="text-gray-700 text-lg mb-3 leading-relaxed">
+          <p className="text-gray-700 text-base mb-3 leading-relaxed">
             At Alpha Mead, we believe our people are our greatest asset. We’re
             always looking for passionate and driven professionals to join our
             growing team.
           </p>
-          <p className="text-gray-700 text-lg mb-6 leading-relaxed">
+          <p className="text-gray-700 text-base mb-6 leading-relaxed">
             Please complete the form to submit your application. If your profile
             matches an open role, our HR team will get in touch.
           </p>
@@ -46,7 +52,7 @@ const EmploymentForm = () => {
           onSubmit={handleSubmit}
           className="bg-white p-8 rounded-xl shadow-lg space-y-6 md:pr-16 w-full"
         >
-          <h3 className="text-2xl font-semibold text-green-700 mb-4">
+          <h3 className="text-xl font-semibold text-green-700 mb-4">
             Employment Opportunities
           </h3>
 
@@ -57,7 +63,7 @@ const EmploymentForm = () => {
               placeholder="Full Name"
               onChange={handleChange}
               required
-              className="border rounded-lg p-3 w-full focus:ring-2 focus:ring-green-500 outline-none"
+              className="border rounded-lg p-3 w-full text-sm focus:ring-2 focus:ring-green-500 outline-none"
             />
             <input
               type="email"
@@ -65,7 +71,7 @@ const EmploymentForm = () => {
               placeholder="Email Address"
               onChange={handleChange}
               required
-              className="border rounded-lg p-3 w-full focus:ring-2 focus:ring-green-500 outline-none"
+              className="border rounded-lg p-3 w-full text-sm focus:ring-2 focus:ring-green-500 outline-none"
             />
           </div>
 
@@ -74,7 +80,7 @@ const EmploymentForm = () => {
             name="phone"
             placeholder="Phone Number"
             onChange={handleChange}
-            className="border rounded-lg p-3 w-full focus:ring-2 focus:ring-green-500 outline-none"
+            className="border rounded-lg p-3 w-full text-sm focus:ring-2 focus:ring-green-500 outline-none"
           />
 
           <input
@@ -83,28 +89,35 @@ const EmploymentForm = () => {
             placeholder="Position Applied For"
             onChange={handleChange}
             required
-            className="border rounded-lg p-3 w-full focus:ring-2 focus:ring-green-500 outline-none"
+            className="border rounded-lg p-3 w-full text-sm focus:ring-2 focus:ring-green-500 outline-none"
           />
 
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
-              Upload Resume (PDF)
-            </label>
+          {/* File Upload + Submit Buttons Side by Side */}
+          <div className="flex flex-col sm:flex-row gap-4 items-center justify-between">
             <input
               type="file"
               name="resume"
               accept=".pdf"
+              ref={fileInputRef}
               onChange={handleChange}
-              className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-green-500 outline-none"
+              className="hidden"
             />
-          </div>
 
-          <button
-            type="submit"
-            className="bg-green-600 text-white py-4 px-8 rounded-xl font-semibold hover:bg-green-700 transition-all shadow-md"
-          >
-            Submit Application
-          </button>
+            <button
+              type="button"
+              onClick={handleFileButtonClick}
+              className="flex-1 bg-gray-100 border border-gray-300 text-gray-700 py-3 px-5 rounded-xl font-semibold hover:bg-gray-200 transition-all shadow-sm text-sm w-full"
+            >
+              {formData.resume ? `📄 ${formData.resume.name}` : "Upload Resume (PDF)"}
+            </button>
+
+            <button
+              type="submit"
+              className="flex-1 bg-green-600 text-base text-white py-3 px-6 rounded-xl font-semibold hover:bg-green-700 transition-all shadow-md w-full"
+            >
+              Submit Application
+            </button>
+          </div>
         </form>
       </div>
     </section>

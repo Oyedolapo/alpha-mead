@@ -21,6 +21,10 @@ import GeneralForm from "./forms/GeneralForm";
 import VendorForm from "./forms/VendorForm";
 import EmploymentForm from "./forms/EmploymentForm";
 import ContactMap from "./ContactMap";
+import InterBusinessHero from "./InterBusinessHero";
+import InterBusinessTabs from "./InterBusinessTabs";
+import InternationalBus from "./InternationalBus";
+import Country from "./Country";
 import Footer from "./Footer";
 
 export {
@@ -47,5 +51,9 @@ export {
     VendorForm,
     EmploymentForm,
     ContactMap,
+    InterBusinessHero,
+    InterBusinessTabs,
+    InternationalBus,
+    Country,
     Footer
 }

@@ -16,17 +16,17 @@ const WhereWeMakeDifference = () => {
       ></div>
       
       <div className="relative container mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-8">Where We Make Real Difference</h2>
+        <h2 className="text-3xl md:text-4xl font-light mb-8">Where We Make Real Difference</h2>
         
-        <p className="text-lg lg:text-xl mb-12 max-w-6xl mx-auto leading-relaxed">
+        <p className="text-base lg:text-lg mb-12 max-w-6xl mx-auto leading-relaxed">
           From Nigeria to Ghana, Cameroon to Senegal, South Africa to Kenya; and more 10 other African countries; 
           we remain true to our vision; growing steady capacity and developing local and international opportunities 
           to help customers make real difference in the things that matter to them.
         </p>
         
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 text-lg">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 text-base lg:text-lg">
           {countries.map((country, index) => (
-            <div key={index} className="hover:text-[#71bf4f] lg:text-2xl text-left lg:text-center font-bold transition-colors cursor-pointer">
+            <div key={index} className="hover:text-[#71bf4f] text-center font-bold transition-colors cursor-pointer">
               {country}
             </div>
           ))}

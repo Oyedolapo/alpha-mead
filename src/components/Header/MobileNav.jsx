@@ -1,7 +1,9 @@
-import React, { useState } from "react";
-import { IoCart } from "react-icons/io5";
+import { useState } from "react";
 import Logo from "../../assets/logo.png";
 import { menuItems } from "../../constants/data";
+import { IoMdClose } from "react-icons/io";
+import { MdMenu, MdOutlineSearch } from "react-icons/md";
+import { RxCaretDown } from "react-icons/rx";
 
 const MobileNav = ({ isMobileMenuOpen, setIsMobileMenuOpen, setIsSearchOpen }) => {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -17,7 +19,7 @@ const MobileNav = ({ isMobileMenuOpen, setIsMobileMenuOpen, setIsSearchOpen }) =
   return (
     <>
       {/* Top row: logo + hamburger */}
-      <div className="lg:hidden py-3 px-4 flex justify-between items-center bg-white shadow-sm">
+      <div className="lg:hidden py-3 px-10 flex justify-between items-center bg-white shadow-sm">
         <a href="/" onClick={closeMenu}>
           <img src={Logo} alt="Alpha Mead Group" className="h-14" />
         </a>
@@ -28,33 +30,9 @@ const MobileNav = ({ isMobileMenuOpen, setIsMobileMenuOpen, setIsSearchOpen }) =
           className="text-gray-700 focus:outline-none"
         >
           {isMobileMenuOpen ? (
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
+           <IoMdClose className="w-6 h-6"/>
           ) : (
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
+            <MdMenu className="w-6 h-6"/>
           )}
         </button>
       </div>
@@ -70,27 +48,9 @@ const MobileNav = ({ isMobileMenuOpen, setIsMobileMenuOpen, setIsSearchOpen }) =
                   <li key={index}>
                     {hasDropdown ? (
                       <>
-                        <button
-                          onClick={() => toggleDropdown(index)}
-                          aria-expanded={activeDropdown === index}
-                          className="w-full flex gap-x-2 items-center text-left px-2 py-2 hover:text-green-600 uppercase"
-                        >
+                        <button onClick={() => toggleDropdown(index)} aria-expanded={activeDropdown === index} className="w-full flex gap-x-2 items-center text-left px-2 py-2 hover:text-green-600 uppercase">
                           <span>{item.name}</span>
-                          <svg
-                            className={`w-4 h-4 transform transition-transform ${
-                              activeDropdown === index ? "rotate-180" : ""
-                            }`}
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M19 9l-7 7-7-7"
-                            />
-                          </svg>
+                          <RxCaretDown className={`w-4 h-4 transform transition-transform ${activeDropdown === index ? "rotate-180" : "" }`}/>
                         </button>
 
                         {activeDropdown === index && (
@@ -99,9 +59,7 @@ const MobileNav = ({ isMobileMenuOpen, setIsMobileMenuOpen, setIsSearchOpen }) =
                               <ul className="space-y-1 uppercase">
                                 {item.dropdown.businesses.map((biz, i) => (
                                   <li key={i}>
-                                    <a
-                                      href={biz.href}
-                                      onClick={closeMenu}
+                                    <a href={biz.href} onClick={closeMenu}
                                       target={
                                         biz.href.startsWith("http")
                                           ? "_blank"
@@ -144,19 +102,7 @@ const MobileNav = ({ isMobileMenuOpen, setIsMobileMenuOpen, setIsSearchOpen }) =
                 aria-label="Search"
                 onClick={() => setIsSearchOpen(true)}
               >
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                  />
-                </svg>
+                <MdOutlineSearch className="w-6 h-6"/>
               </button>
 
               <a

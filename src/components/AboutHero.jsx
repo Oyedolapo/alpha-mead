@@ -7,10 +7,10 @@ const AboutHero = () => {
         style={{ backgroundImage: `url(${AboutHeroImg})` }}
       ></div>
       
-      <div className="relative container mx-auto px-4 text-left">
+      <div className="relative container mx-auto px-28 text-left">
         <div className="row">
           <div className="col-sm-12">
-            <h1 className="text-4xl md:text-6xl font-light">About Us</h1>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-light">About Us</h1>
           </div>
         </div>
       </div>

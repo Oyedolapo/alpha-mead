@@ -8,15 +8,15 @@ import { footerLinks, socialLinks } from '../constants/data';
 const Footer = () => {
   return (
     <footer className="bg-green-900 text-white py-12">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           
           {/* Logo */}
-          <div className="lg:col-span-2 flex justify-center lg:justify-start">
+          <div className="lg:col-span-2 flex justify-center">
             <img 
               src={footerLogo}
               alt="Alpha Mead Group"
-              className="h-64"
+              className="h-40"
             />
           </div>
           
@@ -29,7 +29,7 @@ const Footer = () => {
                   <li key={index} className='mx-4'>
                     <a 
                       href={link.href}
-                      className="text-white hover:text-[#71bf4f] transition-colors text-xl lg:text-2xl font-semibold"
+                      className="text-white hover:text-[#71bf4f] transition-colors text-base font-semibold"
                     >
                       {link.name}
                     </a>
@@ -42,7 +42,7 @@ const Footer = () => {
             <div className="mb-8">
               <a 
                 href="/web-privacy-and-cookie-policy"
-                className="text-[#71bf4f] hover:text-green-300 mx-4 text-xl"
+                className="text-[#71bf4f] hover:text-green-300 mx-4 text-base"
               >
                 WEB PRIVACY AND COOKIE POLICY
               </a>
@@ -66,25 +66,25 @@ const Footer = () => {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white/50 hover:text-white transition-colors duration-200 text-3xl"
+                  className="text-white/50 hover:text-white transition-colors duration-200 text-xl"
                 >
-                  <social.icon fontSize={50}/>
+                  <social.icon fontSize={30}/>
                 </a>
               ))}
             </div>
           </div>
           
           {/* Certifications */}
-          <div className="lg:col-span-2 flex flex-col items-center lg:items-end space-y-4">
+          <div className="lg:col-span-2 flex flex-col items-center space-y-4">
             <img 
               src={ISOImage}
               alt="ISO Certified"
-              className="h-40"
+              className="h-20"
             />
             <img 
               src={awardImage}
               alt="CTIA"
-              className="h-20 my-3"
+              className="h-14 my-3"
             />
           </div>
         </div>
