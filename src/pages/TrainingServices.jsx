@@ -1,5 +1,5 @@
 import React from "react";
-import training from "../assets/training.jpg";
+import training from "../assets/Training.jpg";
 import { BriefcaseBusiness, Building, Home, GraduationCap, Factory } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { ServiceLayout } from "../components";
