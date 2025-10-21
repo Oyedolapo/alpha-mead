@@ -1,10 +1,12 @@
 import React from "react";
 import { AboutUs, BuyProperty, CaseStudyDetail, CommercialCS, CommercialDetail, CommercialFM, ContactUs, FacilityManagement, Home, IndustrialFM, InstitutionalFM, InterBusiness, InterBusinessCaseStudies, LeadershipDetails, ResidentialCS, ResidentialDetail, ResidentialFM, TrainingServices } from "./pages";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
   return (
     <Router>
+      <Toaster position="top-right" reverseOrder={false} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
