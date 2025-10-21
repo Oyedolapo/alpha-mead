@@ -24,6 +24,11 @@ import ContactMap from "./ContactMap";
 import InterBusinessHero from "./InterBusinessHero";
 import InterBusinessTabs from "./InterBusinessTabs";
 import InternationalBus from "./InternationalBus";
+import ServiceLayout from "./ServiceLayout";
+import CaseStudiesLayout from "./CaseStudiesLayout";
+import CaseDetailLayout from "./CaseDetailLayout";
+import BuyPropertyHero from "./BuyPropertyHero";
+import BuyPropertyTabs from "./BuyPropertyTabs";
 import Country from "./Country";
 import Footer from "./Footer";
 
@@ -55,5 +60,10 @@ export {
     InterBusinessTabs,
     InternationalBus,
     Country,
+    ServiceLayout,
+    CaseStudiesLayout,
+    CaseDetailLayout,
+    BuyPropertyHero,
+    BuyPropertyTabs,
     Footer
 }

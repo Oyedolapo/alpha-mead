@@ -9,7 +9,7 @@ const CustomerTestimonials = () => {
         "3WUYpWkZQrs",
     ];
     const [currentPage, setCurrentPage] = useState(0);
-    const testimonialsPerPage = 3;
+    const testimonialsPerPage = 5;
     const totalPages = Math.ceil(testimonials.length / testimonialsPerPage);
 
     const start = currentPage * testimonialsPerPage;
@@ -77,11 +77,11 @@ const CustomerTestimonials = () => {
                 </h3>
 
                 {/* Testimonials Display */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-10">
+                <div className="grid grid-cols-1 gap-8 mb-10">
                     {visibleTestimonials.map((t, index) => (
                         <div
                             key={index}
-                            className="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition flex flex-col justify-between min-h-[250px]"
+                            className="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition flex flex-col justify-between min-h-[150px]"
                         >
                             <p className="text-gray-700 italic mb-4 text-sm leading-relaxed">
                                 “{t.feedback}”

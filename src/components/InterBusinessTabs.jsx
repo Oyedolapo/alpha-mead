@@ -2,16 +2,7 @@ import React, { useState } from "react";
 import { Disclosure } from "@headlessui/react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { useLocation } from "react-router-dom";
-import {
-  Awards,
-  CorporateManagement,
-  CorporatePolicies,
-  Country,
-  CustomerTestimonials,
-  InternationalBus,
-  OurLeadership,
-  WhoWeAre,
-} from "../components";
+import { Country, InternationalBus } from "../components";
 import { beninData, botswanaData, cameroonData, coteData, ethiopiaData, ghanaData, guineaData, kenyaData, rwandaData, senegalData, southAfricaData, tanzaniaData, uaeData } from "../constants/data";
 
 const InterBusinessTabs = ({ initialTab = 0 }) => {

@@ -16,6 +16,26 @@ import Icon1 from '../assets/RealDiff1.png';
 import Icon2 from '../assets/certified-green.png';
 import Icon3 from '../assets/competent-green.png';
 import Icon4 from '../assets/records-green.png';
+import AdvantagePlace from "../assets/Advantage-Place.jpg";
+import Ericsson1 from "../assets/Ericsson-Ethiopia.jpg";
+import Ericsson2 from "../assets/Ericsson-Rwanda.jpg";
+import MTN from "../assets/MTN-Ivory-Coast.jpg";
+import PMI from "../assets/PMI-Senegal.jpg";
+import Guinea from "../assets/WAQF-BID-Guinea-Conakry.jpg";
+import Osborne from "../assets/Osborne-Towers.jpg";
+import PPIL from "../assets/PPIL.jpg";
+import Treasure from "../assets/Treasure-Gardens.jpg";
+import Estate from "../assets/1004-Estate.jpg";
+import RCCG from "../assets/RCCG-City-of-David.jpg";
+import Edic from "../assets/Edic-Chemical.jpg";
+import Ado from "../assets/Ado-Bayero-Mall.jpg";
+import FMB from "../assets/Federal-Mortgage-Bank.jpg";
+import FIRS from "../assets/Federal-Inland-Revenue-Service.jpg";
+import DOME from "../assets/The-DOME-Akure.jpg";
+import FAAN from "../assets/FAAN.jpg";
+import Delta from "../assets/Delta-State-Secretariat.jpg";
+import WFP from "../assets/World-Food-Program.jpg";
+
 
 import { FaTwitter, FaLinkedinIn, FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
 import { Awards, CorporateManagement, CorporatePolicies, CustomerTestimonials, OurLeadership, WhoWeAre } from "../components";
@@ -29,16 +49,17 @@ export const menuItems = [
       href: "#",
       dropdown: {
         businesses: [
-          { name: "Facilities Management (AMF)", href: "/facilities" },
-          { name: "Training services (AMTC)", href: "/development" },
+          { name: "Facilities Management (AMF)", href: "/services/facilities-management" },
+          { name: "Training services (AMTC)", href: "/services/training-services" },
           { name: "Real Estate Development (AMDC)", href: "/healthcare" },
           { name: "Power Solutions", href: "https://alphameadpartners.com/" },
           { name: "Property Technology (PropTech)", href: "https://alphameadtraining.com/" },
-          { name: "Healthcare Management", href: "/bridge-financing" },
+          { name: "Healthcare Management (AMHS)", href: "/bridge-financing" },
+          { name: "AlphaMead Real Estate Partners (AMREP)", href: "/bridge-financing" },
         ]
       },
     },
-    { name: "Buy Property", href: "/buy-property" },
+    { name: "Buy/Rent Property", href: "/buy-property" },
     {
       name: "Int'l Business",
       href: "/international-business",
@@ -409,6 +430,381 @@ export const beninData = [
   }
 ];
 
+
+export const caseStudies = [
+  {
+    id: "ghana-advantage-place",
+    title: "Advantage Place, Ghana",
+    image: AdvantagePlace,
+  },
+  {
+    id: "cote-ivoire-mtn",
+    title: "MTN Ivory Coast",
+    image: MTN,
+  },
+  {
+    id: "guinea-waqf-bid",
+    title: "WAQF-BID Guinea Conakry",
+    image: Guinea,
+  },
+  {
+    id: "senegal-pmi",
+    title: "PMI Senegal",
+    image: PMI,
+  },
+  {
+    id: "ethiopia-ericsson",
+    title: "Ericsson, Ethiopia",
+    image: Ericsson1,
+  },
+  {
+    id: "rwanda-ericsson",
+    title: "Ericsson, Rwanda",
+    image: Ericsson2,
+  },
+];
+
+export const caseStudyDetails = {
+  "ghana-advantage-place": {
+    title: "Advantage Place, Ghana",
+    clientName: "Advantage Place, Ghana",
+    period: "2017 - 2020 (3 yrs)",
+    image: AdvantagePlace,
+    contentHead:
+      "The Advantage Place, a 12-storey commercial property located in the ﬁnancial district of Accra, Ghana. The building encompasses a total ﬂoor area of approx. 9,500 m².",
+    fmScope: `
+    - Service charge administration
+    - Maintenance of elevators, generators, HVAC, electrical and Plumbing systems
+    - Waste management, fumigation and janitorial services.`,
+    keyAchievements:
+      "FM Service excellence sustained 90%+ occupancy for 3 years above district average.",
+  },
+  "cote-ivoire-mtn": {
+    title: "MTN Ivory Coast",
+    clientName: "MTN Ivory Coast",
+    period: "2021–Present (4 yrs)",
+    image: MTN,
+    contentHead:
+      "As part of the Alpha Mead’s FM scope, which includes renovation and renewal, the company was awarded a contract by the Sustainable Development Goal (SDG) oﬃce under the Presidency of Nigeria to supply, install, and manage medical equipment in select federal hospitals.",
+    keyAchievements:
+      `- Maintained < 1% system downtime
+      - 85% first- call resolution.`,
+  },
+  "guinea-waqf-bid": {
+    title: "WAQF-BID Guinea Conakry",
+    clientName: "WAQF-BID Guinea Conakry",
+    period: "2025 - Present",
+    image: Guinea,
+    contentHead:
+      "WAQF City, a mixed-use real estate investment project by WAQF- BID Guinea is strategically located in Guinea Conakry’ business hub. Covering 50, 000m², it includes a 17-storey oﬃce tower, a 20-storey apartment hotel, an 18-sorey residential tower, a 17,000 m² shopping center with 90units, underground parking and landscaped spaces.",
+    fmScope: `
+    - Maintenance of MEP systems and management of utilities
+    - Occupant services, security services
+    - Cleaning, landscaping, pest control, and waste management
+    - Asset & lifecycle management`,
+    keyAchievements: "Project at Commissioning Phase.",
+  },
+  "senegal-pmi": {
+    title: "PMI Senegal",
+    clientName: "PMI Senegal",
+    period: "2022 – Present (3 yrs)",
+    image: PMI,
+    contentHead:
+      "Philip Morris International (PMI), a leading manufacturing company, has its corporate and regional headquarters for West and Central Africa located in Dakar, Senegal.",
+    fmScope: `
+- HVAC
+- Cleaning
+- Waste Management & Disposal`,
+    keyAchievements: `
+- Attained Zero Incidence with HSE Goals
+- Recorded 99% performance uptime for vital equipment`,
+  },
+  "ethiopia-ericsson": {
+    title: "Ericsson, Ethiopia",
+    clientName: "Ericsson, Ethiopia",
+    period: "2020-2025 (5 yrs)",
+    image: Ericsson1,
+    contentHead:
+      "Alpha Mead manages Ericsson’s technical office in Addis Ababa, Ethiopia, located in the city’s business hub.",
+    fmScope: `
+- Cleaning, pest control, and waste management
+- Service request management
+- Mechanical, electrical, and plumbing (MEP) maintenance and repairs`,
+    keyAchievements:
+      `
+      - 98% service request resolution rate within SLA timelines.
+       - 25% reduction in MEP-related downtime over 12 months.`,
+  },
+  "rwanda-ericsson": {
+    title: "Ericsson, Rwanda",
+    clientName: "Ericsson, Rwanda",
+    period: "2019-2020 (1 yr)",
+    image: Ericsson2,
+    contentHead:
+      "The Ericsson Office in Kigali, Rwanda, serves as a pivotal hub for the company’s operations in the region, particularly in advancing the nation’s digital infrastructure.",
+    fmScope: `
+- Maintenance of electrical and plumbing systems  
+- Cleaning, pest control, and waste management
+- Fire safety protection and detection`,
+    keyAchievements: `
+- Reduced facility-related complaints by 75% within the first year
+- Ensured 100% compliance with local fire safety regulations`,
+  },
+};
+
+export const residentialCaseStudies = [
+  {
+    id: "osborne-towers",
+    title: "Osborne Towers",
+    image: Osborne,
+  },
+  {
+    id: "ppil",
+    title: "PPIL",
+    image: PPIL,
+  },
+  {
+    id: "treasure-gardens",
+    title: "Treasure Gardens",
+    image: Treasure,
+  },
+  {
+    id: "1004-estates",
+    title: "1004 Estates",
+    image: Estate,
+  },
+];
+
+export const residentialCaseStudyDetails = {
+  "osborne-towers": {
+    title: "Osborne Towers",
+    clientName: "Osborne Towers",
+    period: "2014 – 2024 (10 yrs)",
+    image: Osborne,
+    contentHead: "Osborne Towers, a high-end residential building is built on 12 ﬂoors and consist of 22 apartments.",
+    fmScope: `
+    - Operation and maintenance of Air-conditioners (A/Cs), , pool, water treatment plant (WTP), sewage treatment plant (STP), elevators, UPS, and fire safety systems.
+    - Diesel supply and servicing of 2 Nos 600KVA generators.
+    - Cleaning, pest control and parking lot management.`,
+    keyAchievements: `
+      90%+ resident satisfaction score.,
+      30% cost efficiency in diesel and utility usage.`
+  },
+  "ppil": {
+    title: "PPIL",
+    clientName: "PPIL",
+    period: "2011 – Present (14 yrs)",
+    image: PPIL,
+    contentHead:
+      "The Ultimate Apartment, a 13 ﬂoors luxury residential building by Primrose Investment Ltd (PPIL).",
+    fmScope: `
+    - Overseeing capital improvement projects.
+    - Planning and executing maintenance of all assets – pool, tennis court, elevators, WTP, generator, gym, parking and storage systems.
+    - Managing janitorial services, waste disposal, landscaping and pest control.`,
+    keyAchievements:
+      `- 99% Facility Uptime.
+      - Met 10% annual savings on maintenance operations.`,
+  },
+  "treasure-gardens": {
+    title: "Treasure Gardens",
+    clientName: "Treasure Gardens",
+    period: "2011 – Present (14 yrs)",
+    image: Treasure,
+    contentHead:
+      "Treasure Garden Estate, Lekki is a luxury residential estate with 79 units, built on over an acre of land.",
+    fmScope: `
+    - Security management
+    - Pest control, waste disposal, cleaning, landscaping and parking management.
+    - Maintenance of common are facilities such as tennis court, generators (750KVA/500KVA), gym.
+    - Water storage and sewage treatment plant`,
+    keyAchievements: `100% water/power supply availability with backup systems.
+    90%+ resident satisfaction score.
+    30% cost eﬃciency in diesel and utility usage.`,
+  },
+  "1004-estates": {
+    title: "1004 Estate",
+    clientName: "1004 Estate",
+    period: "2022 – Present (3 yrs)",
+    image: Estate,
+    contentHead:
+      "The 1004 Estate is a residential cluster comprising 1072 apartments.",
+    fmScope: `
+      - Full management of all residential cluster, covering services like electrical, mechanical plumbing systems, civil, lift maintenance, building repairs and fire safety systems.
+      - Landscaping, cleaning, fumigation, de-ratting and waste management
+      - Help desk support, and coordination`,
+    keyAchievements: `
+    - 98% of service request resolved in time
+    - Near zero (0) reduction in security infractions`,
+  },
+};
+
+export const commercialCaseStudies = [
+  {
+    id: "rccg-city",
+    title: "RCCG City of David, Victoria Island, Lagos",
+    image: RCCG,
+  },
+  {
+    id: "edic-chemical",
+    title: "Edic Chemical",
+    image: Edic,
+  },
+  {
+    id: "ado-bayero",
+    title: "Ado Bayero Mall, Kano",
+    image: Ado,
+  },
+  {
+    id: "federal-mortgage-bank",
+    title: "Federal Mortgage Bank (FMB)",
+    image: FMB,
+  },
+  {
+    id: "federal-inland-revenue",
+    title: "Federal Inland Revenue Service",
+    image: FIRS,
+  },
+  {
+    id: "ondo-state-government",
+    title: "Ondo State Government, Akure",
+    image: DOME,
+  },
+  {
+    id: "federal-airport-authority",
+    title: "Federal Airport Authority of Nigeria",
+    image: FAAN,
+  },
+  {
+    id: "delta-state-secretariat",
+    title: "Delta State Secretariat",
+    image: Delta,
+  },
+  {
+    id: "world-food-programme",
+    title: "World Food Program, Maiduguri",
+    image: WFP,
+  },
+];
+
+export const commercialCaseStudyDetails = {
+  "rccg-city": {
+    title: "RCCG City of David, Victoria Island, Lagos",
+    clientName: "RCCG City of David, Victoria Island, Lagos",
+    period: "2023 – Present (2yrs)",
+    image: RCCG,
+    contentHead: "Trinity Towers is an iconic 13-storey commercial complex in Victoria Island, Lagos developed by RCCG, City of David. The facilities asset oﬀers ﬂexible oﬃce spaces, premium retail shops, exceptional parking ration and alternative access via helipad. Other features include elevators, generator plant, sewage and water treatment plan, chiller systems etc.",
+    fmScope: `
+    - Maintenance of MEP (mechanical, electrical and plumbing) systems.
+    - Cleaning, landscaping, waste management and pest control
+    - Fire protection system servicing and testing.`,
+    keyAchievements: `
+      Achieved 85% occupancy within 16 months driven by top-tier facility management standards and service quality.`
+  },
+  "edic-chemical": {
+    title: "Edic Chemical",
+    clientName: "Edic Chemical",
+    period: "2019 – Present (6yrs)",
+    image: Edic,
+    contentHead:
+      "The Edic Chemical Building is a Grade B oﬃce development situated at Ilupeju, Lagos, developed by the EDIC Group. The building comprises 6 ﬂoors, each with a ﬂoor area of approximately 4,812 m².",
+    fmScope: `
+    - Diesel and power management
+    - Cleaning, waste and pest control Electrical and plumbing maintenance.`,
+    keyAchievements:
+      `- Maintained 98% cleanliness rating in bi-annual tenant surveys for 2 years.
+      - Reduced annual fuel costs by ₦ 3.2M through energy-eﬃcient scheduling.`,
+  },
+  "ado-bayero": {
+    title: "Ado Bayero Mall, Kano",
+    clientName: "Ado Bayero Mall, Kano",
+    period: "2013 – Present (12yrs)",
+    image: Ado,
+    contentHead:
+      "Ado Bayero Mall is the ﬁrst ultra-modern shopping complex in Northern Nigeria, spanning a total ﬂoor area of 24,000m². Strategically located in the commercial heart of Kano, it serves as a major retail and lifestyle destination.",
+    fmScope: `
+    - Maintenance of chillers, generators, plumbing, elevators, electrical systems.
+    - Pest control, landscaping, janitorial services etc.`,
+    keyAchievements: `24/7 response with under 45-minutes resolution for critical issues Supported retail tenants with minimal business disruption.`,
+  },
+  "federal-mortgage-bank": {
+    title: "Federal Mortgage Bank (FMB)",
+    clientName: "Federal Mortgage Bank (FMB)",
+    period: "2024 – Present (1yr)",
+    image: FMB,
+    contentHead:
+      "FMB-owned Mamman Kontagora building is a 14-storey commercial high-rise oﬀering approximately 11,000m² of lettable space.",
+    fmScope: `
+      - Maintenance of elevators, generator and fire detection/protection systems.
+      - Power and diesel management
+      - Pest control, janitorial and security management.`,
+    keyAchievements: `
+    - Achieved zero (0) tenant disputes through enhanced service delivery and accurate service charge apportionment.`,
+  },
+  "federal-inland-revenue": {
+    title: "Federal Inland Revenue Service",
+    clientName: "Federal Inland Revenue Service",
+    period: "2024 – Present (1yr)",
+    image: FIRS,
+    contentHead:
+      "Provision of integrated Facilities Management (FM) service for the 6- ﬂoor FIRS Corporate Head Oﬃce Annex, located on Awolowo Road, Ikoyi.",
+    fmScope: `
+      - Soft FM services: cleaning, landscaping, pest control, de-ratting etc.
+      - Hard FM services: Maintenance of water treatment plant, electrical, plumbing, elevators, fire safety systems etc.
+      - HVAC, plumbing systems etc.`,
+    keyAchievements: `
+    - Ensured 98% preventive maintenance (PM) compliance, reducing downtime by 35%.
+    - Delivered daily cleaning (3000+m²) with 96% satisfaction.`,
+  },
+  "ondo-state-government": {
+    title: "Ondo State Government, Akure",
+    clientName: "Ondo State Government, Akure",
+    period: "2022 – Present (3yrs)",
+    image: DOME,
+    contentHead:
+      "The DOME Akure, developed by Ondo State is a 2,000-capacity international culture and event centre situated on a 33,000-hectare size.",
+    fmScope: `
+      - Centre management
+      - Cleaning, landscaping and pest control
+      - HVAC, generator, plumbing, security systems and electrical maintenance`,
+    keyAchievements: `
+    - Zero (0) incidents, fully HSE compliant for 24 months
+    - Reduced maintenance costs 20% in 12 months through efficiencies.`,
+  },
+  "federal-airport-authority": {
+    title: "Federal Airport Authority of Nigeria",
+    clientName: "Federal Airport Authority of Nigeria (FAAN)",
+    period: "2017 – 2019 (2yrs)",
+    image: FAAN,
+    contentHead:
+      "The FAAN-developed multi-level (6) car park at the International Airport Terminal, Lagos spans 38, 652m² with 450m² of commercial space a 1, 300-vehicle capacity.",
+    fmScope: `
+      - Maintenance of closed-circuit television (CCTV), security booth operations, ﬁre safety systems. Electrical, plumbing services and pest control.`,
+    keyAchievements: `
+    - Achieved 100% compliance with HSE standards during audits across clinic and warehouse sites`,
+  },
+  "delta-state-secretariat": {
+    title: "Delta State Secretariat, Asaba",
+    clientName: "Delta State Secretariat, Asaba",
+    period: "2022 – Present (3yrs)",
+    image: Delta,
+    contentHead:
+      "Management of the State Secretariat which occupies 45,000 square meters ﬂoor area. Service coverage includes HVAC, electrical, plumbing, landscaping, janitorial and HSE.",
+    keyAchievements: `
+    - 90% reduction in rework in ﬁrst of the contract
+    - Consistently met 0% escalation target`,
+  },
+  "world-food-programme": {
+    title: "World Food Program Maiduguri",
+    clientName: "World Food Program Maiduguri",
+    period: "2021 – Present (4yrs)",
+    image: WFP,
+    contentHead:
+      "A FM contract for the World Food Program (WFP), Maiduguri is sponsored by the World Health Organization (WHO). Our management oversight includes soft FM services (janitorial, pest control), plumbing and electrical as well generator maintenance.",
+    keyAchievements: `
+    - 99.9% critical asset uptime – generator.
+    - Over 20,000 manhour free of loss Time Due to Injuries (LTI)`,
+  },
+};
 
 
 
