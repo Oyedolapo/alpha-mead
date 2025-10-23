@@ -44,6 +44,7 @@ import GreenPark from "../assets/Green-Park-Site-Services.jpg"
 import TransEstate from "../assets/Transcendence-Estate.jpg"
 import GreyStone from "../assets/Grey-Stone.jpg"
 import MoremiScheme from "../assets/Moremi-Scheme.jpg"
+import Slider1 from "../assets/BoardMeeting.jpg"
 
 
 import { FaTwitter, FaLinkedinIn, FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
@@ -146,6 +147,12 @@ export const slides = [
     description: "International Standards that support you",
     overlay: true,
   },
+  {
+    image: Slider1,
+    title: "CORPORATE GROWTH AS ENGINE OF GROWTH.",
+    description: "Sustainable Growth fueled by strong corporate governance structure",
+    overlay: true,
+  }
 ];
 
 export const features = [
