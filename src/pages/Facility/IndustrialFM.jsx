@@ -22,6 +22,11 @@ const IndustrialFM = () => {
             title="Powering Peak Performance for Industrial Facilities"
             paragraphs={paragraphs}
             caseStudy={false}
+            breadcrumbItems={[
+                { label: "Alpha Mead", link: "/" },
+                { label: "Facility Management", link: "/services/facilities-management" },
+                { label: "Industrial Facility Management" },
+            ]}
          />
     )
 };

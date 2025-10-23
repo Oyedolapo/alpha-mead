@@ -10,6 +10,9 @@ const CaseDetailLayout = ({
   keyAchievements,
   backPath,
   navigate,
+  keyComponent,
+  targets,
+  scopeText
 }) => {
   return (
     <main className="max-w-6xl mx-auto px-6 lg:px-10 py-16">
@@ -43,18 +46,50 @@ const CaseDetailLayout = ({
             <p className="text-gray-700 leading-relaxed">{contentHead}</p>
           )}
 
+          {targets && (
+            <div>
+              <h3 className="text-lg font-bold text-gray-800 mb-2">
+                Target
+              </h3>
+              <ol className="list-decimal list-inside text-gray-700 leading-relaxed whitespace-pre-line">
+                {targets
+                  .split("\n")
+                  .filter(Boolean)
+                  .map((line, i) => (
+                    <li key={i}>{line.replace("-", "").trim()}</li>
+                  ))}
+              </ol>
+            </div>
+          )}
+
+          {keyComponent && (
+            <div>
+              <h3 className="text-lg font-bold text-gray-800 mb-2">
+                Key components of the scheme
+              </h3>
+              <ol className="list-decimal list-inside text-gray-700 leading-relaxed whitespace-pre-line">
+                {keyComponent
+                  .split("\n")
+                  .filter(Boolean)
+                  .map((line, i) => (
+                    <li key={i}>{line.replace("-", "").trim()}</li>
+                  ))}
+              </ol>
+            </div>
+          )}
+
           {fmScope && (
             <div>
               <h3 className="text-lg font-bold text-gray-800 mb-2">
-                Scope of FM Services
+                {scopeText ? "Service Scope" : "Scope of FM Services"}
               </h3>
               <ol className="list-decimal list-inside text-gray-700 leading-relaxed whitespace-pre-line">
                 {fmScope
                   .split("\n")
                   .filter(Boolean)
                   .map((line, i) => (
-                    <li key={i}>{line.replace("-", "").trim()}</li>
-                  ))}
+                  <li key={i}>{line.replace("-", "").trim()}</li>
+                ))}
               </ol>
             </div>
           )}

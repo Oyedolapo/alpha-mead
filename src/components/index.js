@@ -29,6 +29,7 @@ import CaseStudiesLayout from "./CaseStudiesLayout";
 import CaseDetailLayout from "./CaseDetailLayout";
 import BuyPropertyHero from "./BuyPropertyHero";
 import BuyPropertyTabs from "./BuyPropertyTabs";
+import Breadcrumb from "./Breadcrumb";
 import Country from "./Country";
 import Footer from "./Footer";
 
@@ -65,5 +66,6 @@ export {
     CaseDetailLayout,
     BuyPropertyHero,
     BuyPropertyTabs,
+    Breadcrumb,
     Footer
 }

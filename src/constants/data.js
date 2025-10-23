@@ -35,6 +35,15 @@ import DOME from "../assets/The-DOME-Akure.jpg";
 import FAAN from "../assets/FAAN.jpg";
 import Delta from "../assets/Delta-State-Secretariat.jpg";
 import WFP from "../assets/World-Food-Program.jpg";
+import TrainingCase from "../assets/training_case.jpg"
+import LekkiPearl from "../assets/Lekki-Pearl.jpg"
+import GreenHomes from "../assets/Green-Park-Homes.jpg"
+import GreenHaven from "../assets/Green-Haven.jpg"
+import MakunCity from "../assets/Makun-City.jpg"
+import GreenPark from "../assets/Green-Park-Site-Services.jpg"
+import TransEstate from "../assets/Transcendence-Estate.jpg"
+import GreyStone from "../assets/Grey-Stone.jpg"
+import MoremiScheme from "../assets/Moremi-Scheme.jpg"
 
 
 import { FaTwitter, FaLinkedinIn, FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
@@ -51,11 +60,11 @@ export const menuItems = [
         businesses: [
           { name: "Facilities Management (AMF)", href: "/services/facilities-management" },
           { name: "Training services (AMTC)", href: "/services/training-services" },
-          { name: "Real Estate Development (AMDC)", href: "/healthcare" },
-          { name: "Power Solutions", href: "https://alphameadpartners.com/" },
-          { name: "Property Technology (PropTech)", href: "https://alphameadtraining.com/" },
-          { name: "Healthcare Management (AMHS)", href: "/bridge-financing" },
-          { name: "AlphaMead Real Estate Partners (AMREP)", href: "/bridge-financing" },
+          { name: "Real Estate Development (AMDC)", href: "/services/real-estate" },
+          { name: "Power Solutions", href: "/services/power-solutions" },
+          { name: "Property Technology (PropTech)", href: "/services/property-technology" },
+          { name: "Healthcare Management (AMHS)", href: "/services/healthcare-management" },
+          { name: "AlphaMead Real Estate Partners (AMREP)", href: "/services/alphamead-real-estate-partners" },
         ]
       },
     },
@@ -512,12 +521,12 @@ export const caseStudyDetails = {
     contentHead:
       "Philip Morris International (PMI), a leading manufacturing company, has its corporate and regional headquarters for West and Central Africa located in Dakar, Senegal.",
     fmScope: `
-- HVAC
-- Cleaning
-- Waste Management & Disposal`,
+    - HVAC
+    - Cleaning
+    - Waste Management & Disposal`,
     keyAchievements: `
-- Attained Zero Incidence with HSE Goals
-- Recorded 99% performance uptime for vital equipment`,
+    - Attained Zero Incidence with HSE Goals
+    - Recorded 99% performance uptime for vital equipment`,
   },
   "ethiopia-ericsson": {
     title: "Ericsson, Ethiopia",
@@ -527,13 +536,12 @@ export const caseStudyDetails = {
     contentHead:
       "Alpha Mead manages Ericsson’s technical office in Addis Ababa, Ethiopia, located in the city’s business hub.",
     fmScope: `
-- Cleaning, pest control, and waste management
-- Service request management
-- Mechanical, electrical, and plumbing (MEP) maintenance and repairs`,
+    - Cleaning, pest control, and waste management
+    - Service request management
+    - Mechanical, electrical, and plumbing (MEP) maintenance and repairs`,
     keyAchievements:
-      `
-      - 98% service request resolution rate within SLA timelines.
-       - 25% reduction in MEP-related downtime over 12 months.`,
+      `- 98% service request resolution rate within SLA timelines.
+      - 25% reduction in MEP-related downtime over 12 months.`,
   },
   "rwanda-ericsson": {
     title: "Ericsson, Rwanda",
@@ -543,12 +551,12 @@ export const caseStudyDetails = {
     contentHead:
       "The Ericsson Office in Kigali, Rwanda, serves as a pivotal hub for the company’s operations in the region, particularly in advancing the nation’s digital infrastructure.",
     fmScope: `
-- Maintenance of electrical and plumbing systems  
-- Cleaning, pest control, and waste management
-- Fire safety protection and detection`,
+    - Maintenance of electrical and plumbing systems  
+    - Cleaning, pest control, and waste management
+    - Fire safety protection and detection`,
     keyAchievements: `
-- Reduced facility-related complaints by 75% within the first year
-- Ensured 100% compliance with local fire safety regulations`,
+    - Reduced facility-related complaints by 75% within the first year
+    - Ensured 100% compliance with local fire safety regulations`,
   },
 };
 
@@ -805,6 +813,202 @@ export const commercialCaseStudyDetails = {
     - Over 20,000 manhour free of loss Time Due to Injuries (LTI)`,
   },
 };
+
+export const trainingCaseStudies = [
+  {
+    id: "training-case-studies",
+    title: "Training Services Case Studies",
+    image: TrainingCase,
+  },
+];
+
+export const trainingCaseStudyDetails = {
+  "training-case-studies": {
+    title: "Training Services Case Studies",
+    image: TrainingCase,
+    targets: `
+    - New Graduate
+    - Aspiring Professionals
+    - Professionals in Real Estate
+    - Business Leaders/Owners – Workplace/Facilities Management`,
+    fmScope: `
+    - Fundamentals of Facilities Management (FFM)
+    - Professional Facilities Management (PFM)
+    - Business of Facilities Management (BFM)
+    - Facility Management Professional (IFMA FMP)`,
+    keyAchievements: `
+      Trained 3000+ graduates across Nigeria and Africa to ease entry into FM profession.
+      Over 500+ AMTC’s enrolled candidates passed their FMP certification exam at one sitting.
+      First and only private IFMA USA Education Training Affiliate in Nigeria and seven (7) African countries. Achieving a 15% cost reduction within six (6) months into the contract.`
+  },
+};
+
+export const realEstateCaseStudies = [
+  {
+    id: "lekki-pearl",
+    title: "Lekki Pearl",
+    image: LekkiPearl,
+  },
+  {
+    id: "green-homes",
+    title: "Green Park Homes",
+    image: GreenHomes,
+  },
+  {
+    id: "green-haven",
+    title: "Green Haven",
+    image: GreenHaven,
+  },
+  {
+    id: "makun-city",
+    title: "Makun City",
+    image: MakunCity,
+  },
+  {
+    id: "green-park",
+    title: "Green Park - Site & Services",
+    image: GreenPark,
+  },
+  {
+    id: "transcendence-estate",
+    title: "Transcendence Estate",
+    image: TransEstate,
+  },
+  {
+    id: "grey-stone",
+    title: "Grey Stone",
+    image: GreyStone,
+  },
+  {
+    id: "moremi-scheme",
+    title: "Moremi Scheme",
+    image: MoremiScheme,
+  },
+];
+
+export const realEstateCaseStudyDetails = {
+  "lekki-pearl": {
+    title: "Lekki Pearl",
+    clientName: "Lekki Pearl",
+    period: "2025",
+    image: LekkiPearl,
+    contentHead: "The Lekki Pearl Project, a residential development with 54 units including 18 blocks of ﬂats, 16 semi-detached houses and 20 terrace units. The project included the design of internal roads, stormwater drainage, and electrical infrastructure for a well-planned urban environment.",
+    keyAchievements: `
+      First IFC ADVANCED EDGE certiﬁed mass housing project in Africa (EDGE Excellence in Design For Greater Eﬃciency),
+      Fully subscribed, fully occupied.
+      Achieved 41% energy saving.
+      Operating Cost reduction.
+      360% growth in capital appreciation within 3 years
+      Property value increased from ₦ 25Million to ₦ 75Million.`
+  },
+  "green-homes": {
+    title: "Green Park Homes",
+    clientName: "Green Park Homes",
+    period: "2025",
+    image: GreenHomes,
+    contentHead:
+      "A 512 Housing units located opposite Fara Park. The project boost of perimeter fencing, roads & drains, public power supply, central water plants, street- lights, backup generator.",
+    keyAchievements:
+      `80% ﬁrst time subscription following project launch.`,
+  },
+  "green-haven": {
+    title: "Green Haven",
+    clientName: "Green Haven",
+    period: "2025",
+    image: GreenHaven,
+    contentHead:
+      "A proposed residential project that sit on over 120, 000 m².",
+    keyAchievements: `Project in view`,
+  },
+  "makun-city": {
+    title: "Makun City",
+    clientName: "Makun City",
+    period: "2018",
+    image: MakunCity,
+    contentHead:
+      "A masterful 200 housing units built to boost tourism, residential and commercial attractions in Ogun State.",
+    keyAchievements: `
+    - Average 5-10 days to build a building carcass.
+    - 20% cost saving compared to traditional block & mortar.
+    - Foremost to achieve green construction i.e. no use of timber and more.`,
+  },
+  "green-park": {
+    title: "Green Park - Site & Services",
+    clientName: "Green Park - Site & Services",
+    period: "2025",
+    image: GreenPark,
+    contentHead:
+      "A proposed site and service project that sit on over 270, 000 m². Project as designed with the aim to showcase and promote green and sustainable housing and infrastructure.",
+    keyComponent: `
+    - Well-paved roads, underground systems and street lighting
+    - Central water supply and electricity connections
+    - A robust security system, including perimeter fence
+    - Green spaces and recreational areas`,
+    keyAchievements: `
+    - Project in view`
+  },
+  "transcendence-estate": {
+    title: "Transcendence Estate",
+    clientName: "Transcendence Estate",
+    period: "2023",
+    image: TransEstate,
+    contentHead:
+      "The 1.5-hectare Grey Stone development includes interlocked roads, drainage systems, power supply infrastructure, and central water and sewage systems for residential services.",
+    keyAchievements: `
+    - 90% completion interlocked road on time.`,
+  },
+  "grey-stone": {
+    title: "Grey Stone",
+    clientName: "Grey Stone",
+    period: "2023",
+    image: GreyStone,
+    contentHead:
+      "The 1.5-hectare Grey Stone development includes interlocked roads, drainage systems, power supply infrastructure, and central water and sewage systems for residential services.",
+    keyAchievements: `
+    - 90% completion interlocked road on time.`,
+  },
+  "moremi-scheme": {
+    title: "Moremi Scheme",
+    clientName: "Moremi Scheme",
+    period: "2022",
+    image: MakunCity,
+    contentHead:
+      "The 4-hectare Moremi site and service project includes key infrastructure like roads, drainage, and power systems for smooth mobility, ﬂood control and reliable energy supply.",
+    keyAchievements: `
+    - 95% independent audit score on sustainable infrastructural systems`,
+  },
+};
+
+export const powerCaseStudies = [
+  {
+    id: "power-case-studies",
+    title: "Power Solution Case Studies",
+    image: TrainingCase,
+  },
+];
+
+export const powerCaseStudyDetails = {
+  "power-case-studies": {
+    title: "Power Solution Case Studies",
+    image: TrainingCase,
+    targets: `
+    - Luxury Apartments
+    - Mid/Large Estates
+    - Commercial Retail`,
+    fmScope: `
+    - Supply and installation of solar inverter system.
+    - Administration of pre-paid smart meter for vending and prepayment.
+    - Apportionment of power and diesel service charges.
+    - Energy Audit – personalized and common area.`,
+    keyAchievements: `
+      Supply and installation of solar inverter system.
+      Administration of pre-paid smart meter for vending and prepayment. 
+      Apportionment of power and diesel service charges.
+      Implemented smart pre-paid metering integrating EKEDC and diesel generator across 120+ units Estate – Lekki Pearl.
+      Led an energy audit for a 24-unit luxury apartments (Atlantic Royal Gardens) achieving a 15% cost reduction within six (6) months into the contract.`
+  },
+};
+
 
 
 

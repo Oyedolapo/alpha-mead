@@ -22,6 +22,11 @@ const InstitutionalFM = () => {
             title="Integrated Facilities Management for Large Institutions"
             paragraphs={paragraphs}
             caseStudy={false}
+            breadcrumbItems={[
+                { label: "Alpha Mead", link: "/" },
+                { label: "Facility Management", link: "/services/facilities-management" },
+                { label: "Institutional Facility Management" },
+            ]}
          />
     )
 };

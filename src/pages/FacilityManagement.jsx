@@ -1,5 +1,5 @@
 import React from "react";
-import facility from "../assets/facility.jpg";
+import facility from "../assets/facility (1).jpg";
 import { BriefcaseBusiness, Building, Home, GraduationCap, Factory } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { ServiceLayout } from "../components";
@@ -63,6 +63,10 @@ const FacilityManagement = () => {
             paragraphs={paragraphs}
             cards={linkedCards}
             caseStudy={false}
+            breadcrumbItems={[
+                { label: "Alpha Mead", link: "/" },
+                { label: "Facility Management" },
+            ]}
         />
     );
 };

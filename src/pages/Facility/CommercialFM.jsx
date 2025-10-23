@@ -23,6 +23,11 @@ const CommercialFM = () => {
             paragraphs={paragraphs}
             caseStudy={true}
             caseLink="/commercial/case-studies"
+            breadcrumbItems={[
+                { label: "Alpha Mead", link: "/" },
+                { label: "Facility Management", link: "/services/facilities-management" },
+                { label: "Commercial Facility Management" },
+            ]}
          />
     )
 };

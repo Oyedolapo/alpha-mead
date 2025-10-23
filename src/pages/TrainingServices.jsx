@@ -30,7 +30,7 @@ const TrainingServices = () => {
             icon: <GraduationCap size={28} />,
             title: "Facility Management Professional (FMP)",
             text: "The Facility Management Professional (FMP) is a globally recognized certification offered by the International Facility Management Association (IFMA).",
-            link: "/facility/fmp",
+            link: "/training/fmp",
         }
     ];
 
@@ -58,6 +58,10 @@ const TrainingServices = () => {
             caseStudy={true}
             caseLink="/training-services/case-studies"
             training={true}
+            breadcrumbItems={[
+                { label: "Alpha Mead", link: "/" },
+                { label: "Training Services (AMTC)" },
+            ]}
         />
     );
 };
