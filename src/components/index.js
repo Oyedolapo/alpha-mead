@@ -22,7 +22,7 @@ import VendorForm from "./forms/VendorForm";
 import EmploymentForm from "./forms/EmploymentForm";
 import ContactMap from "./ContactMap";
 import InterBusinessHero from "./InterBusinessHero";
-import InterBusinessTabs from "./InterBusinessTabs";
+import InterBusinessTabs from "./InternationalBusinessTabs/InterBusinessTabs";
 import InternationalBus from "./InternationalBus";
 import ServiceLayout from "./ServiceLayout";
 import CaseStudiesLayout from "./CaseStudiesLayout";
@@ -31,6 +31,14 @@ import BuyPropertyHero from "./BuyPropertyHero";
 import BuyPropertyTabs from "./BuyPropertyTabs";
 import Breadcrumb from "./Breadcrumb";
 import Country from "./Country";
+import MediaHero from "./MediaHero";
+import MediaTabs from "./MediaTabs";
+import CorporateNews from "./Media/CorporateNews";
+import CorporateEvents from "./Media/CorporateEvents";
+import Blog from "./Media/Blog";
+import Publications from "./Media/Publications";
+import StrategicPartnership from "./StrategicPartnership";
+import ServiceTabs from "./Services/ServiceTabs";
 import Footer from "./Footer";
 
 export {
@@ -67,5 +75,13 @@ export {
     BuyPropertyHero,
     BuyPropertyTabs,
     Breadcrumb,
+    MediaHero,
+    MediaTabs,
+    CorporateNews,
+    CorporateEvents,
+    Blog,
+    Publications,
+    StrategicPartnership,
+    ServiceTabs,
     Footer
 }

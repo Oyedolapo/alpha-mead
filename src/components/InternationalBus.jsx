@@ -1,8 +1,8 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 const InternationalBus = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   return (
     <div>
@@ -19,12 +19,12 @@ const InternationalBus = () => {
           Our approach consolidates all facility management functions under one strategic umbrella, enabling effortless coordination and central governance. Our team handles everything from a detailed facilities condition audit to comprehensive building maintenance and operations, ensuring your assets are always performing at their peak. We also specialize in warehouse and logistics services, offering robust security systems and technologies for properties to protect your investments. Regardless of your location, we are your single point of contact for all your global facility management needs.
         </p>
 
-        <button
+        {/* <button
           onClick={() => navigate("/international-business/case-studies")}
           className="bg-[#71bf4f] hover:bg-green-600 text-white px-8 py-3 rounded-2xl inline-block transition-colors mt-4"
         >
           View International Business Case Studies
-        </button>
+        </button> */}
       </div>
     </div>
   );

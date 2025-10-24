@@ -8,7 +8,7 @@ const ContactUs = () => {
             <main className="pt-[7rem]">
                 <ContactHero />
                 <ContactForm />
-                <ContactMap />
+                {/* <ContactMap /> */}
             </main>
             <Footer />
         </section>

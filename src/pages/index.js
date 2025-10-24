@@ -4,6 +4,7 @@ import LeadershipDetails from "./LeadershipDetails";
 import InterBusiness from "./InterBusiness";
 import InterBusinessCaseStudies from "./InterBusinessCaseStudies";
 import CaseStudyDetail from "./CaseStudyDetail";
+import OurServices from "./OurServices";
 import FacilityManagement from "./FacilityManagement";
 import ResidentialFM from "./Facility/ResidentialFM";
 import ResidentialCS from "./CaseStudies/ResidentialCS";
@@ -38,6 +39,7 @@ import Security from "./Technology/Security";
 import Health from "./Health";
 import Amrep from "./Amrep";
 import BuyProperty from "./BuyProperty";
+import MediaEvents from "./MediaEvents";
 import ContactUs from "./ContactUs";
 
 
@@ -48,6 +50,7 @@ export {
     InterBusiness,
     InterBusinessCaseStudies,
     CaseStudyDetail,
+    OurServices,
     FacilityManagement,
     ResidentialFM,
     ResidentialCS,
@@ -82,5 +85,6 @@ export {
     Health,
     Amrep,
     BuyProperty,
+    MediaEvents,
     ContactUs
 }

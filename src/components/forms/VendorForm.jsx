@@ -24,7 +24,8 @@ const VendorForm = () => {
                     </p>
 
                     <a
-                        href="#"
+                        href="https://forms.office.com/Pages/ResponsePage.aspx?id=JcA9CmpQdUCn-XqtIXbqPmlrT1DvIGpNgM3TBXntXU5UMENYUlZYOFRMRDlHSElQVlBKOUtDSUUzUC4u"
+                        target="_blank"
                         className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-xl font-semibold transition-all shadow-md"
                     >
                         Go to Vendor Portal <FaExternalLinkAlt />

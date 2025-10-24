@@ -56,18 +56,18 @@ export const menuItems = [
     { name: "About Us", href: "/about-us" },
     {
       name: "Our Services",
-      href: "#",
-      dropdown: {
-        businesses: [
-          { name: "Facilities Management (AMF)", href: "/services/facilities-management" },
-          { name: "Training services (AMTC)", href: "/services/training-services" },
-          { name: "Real Estate Development (AMDC)", href: "/services/real-estate" },
-          { name: "Power Solutions", href: "/services/power-solutions" },
-          { name: "Property Technology (PropTech)", href: "/services/property-technology" },
-          { name: "Healthcare Management (AMHS)", href: "/services/healthcare-management" },
-          { name: "AlphaMead Real Estate Partners (AMREP)", href: "/services/alphamead-real-estate-partners" },
-        ]
-      },
+      href: "/our-services",
+      // dropdown: {
+      //   businesses: [
+      //     { name: "Facilities Management (AMF)", href: "/services/facilities-management" },
+      //     { name: "Training services (AMTC)", href: "/services/training-services" },
+      //     { name: "Real Estate Development (AMDC)", href: "/services/real-estate" },
+      //     { name: "Power Solutions", href: "/services/power-solutions" },
+      //     { name: "Property Technology (PropTech)", href: "/services/property-technology" },
+      //     { name: "Healthcare Management (AMHS)", href: "/services/healthcare-management" },
+      //     { name: "AlphaMead Real Estate Partners (AMREP)", href: "/services/alphamead-real-estate-partners" },
+      //   ]
+      // },
     },
     { name: "Buy/Rent Property", href: "/buy-property" },
     {
@@ -93,15 +93,15 @@ export const menuItems = [
     },
     {
       name: "Media & Events",
-      href: "#",
-      dropdown: {
-        businesses: [
-          { name: "Corporate News", href: "/events" },
-          { name: "Corporate Events", href: "/events" },
-          { name: "Blogs", href: "/events" },
-          { name: "Publications", href: "/media" },
-        ],
-      },
+      href: "/media-and-events",
+      // dropdown: {
+      //   businesses: [
+      //     { name: "Corporate News", href: "/events" },
+      //     { name: "Corporate Events", href: "/events" },
+      //     { name: "Blogs", href: "/events" },
+      //     { name: "Publications", href: "/media" },
+      //   ],
+      // },
     },
     { name: "Contact Us", href: "/contact-us" },
 ];
@@ -149,8 +149,8 @@ export const slides = [
   },
   {
     image: Slider1,
-    title: "CORPORATE GROWTH AS ENGINE OF GROWTH.",
-    description: "Sustainable Growth fueled by strong corporate governance structure",
+    title: "CORPORATE GOVERNANCE AS ENGINE OF GROWTH.",
+    description: "Good corporate governance delivers profitable and sustainable growth",
     overlay: true,
   }
 ];
@@ -356,8 +356,184 @@ export const ghanaData = [
     title: "Ghana",
     content: `Alphamead has established a strong presence in Ghana by delivering world-class facility management solutions that drive efficiency, safety, and sustainability. Over the years, we have partnered with leading organizations such as <span class="font-bold">Unilever, Nestlé, and Advantage Place</span>, providing tailored services that ensure their facilities operate at peak performance.`,
     secondContent: `Our proven track record in Ghana underscores our reputation as a trusted partner for multinational corporations and local businesses alike. By combining global best practices with local expertise, we continue to set the benchmark for professional facility management in Ghana.`,
+    leadership: [
+      {
+        name: "Jane Doe",
+        position: "Country Manager",
+        image: femi,
+        bio: "Jane oversees all operations and strategic partnerships in Ghana.",
+      },
+      {
+        name: "John Smith",
+        position: "Head of Operations",
+        image: Chinwe,
+        bio: "John ensures service excellence and customer satisfaction.",
+      },
+      {
+        name: "Linda Okafor",
+        position: "Finance Director",
+        image: Victor,
+        bio: "Linda manages financial strategy and compliance across the region.",
+      },
+    ]
   }
 ];
+
+export const fmData = {
+  content: `
+    <p>Alpha Mead Facilities provides integrated Facility Management services to diverse clients across sectors.</p>
+  `,
+  leadership: [
+    {
+      name: "John Doe",
+      position: "Managing Director, AMF",
+      image: "/images/services/fm/john-doe.jpg",
+      bio: "John leads the FM division with over 15 years of experience in operations and strategy.",
+    },
+  ],
+  services: [
+    "Maintenance Services",
+    "Energy Management",
+    "Cleaning & Janitorial Services",
+  ],
+  brochureUrl: "/brochures/amf-brochure.pdf",
+  address: "Lagos, Nigeria",
+  email: "info@alphamead.com",
+  phone: "+234 800 123 4567",
+};
+
+// 👇 You can duplicate the above structure for the rest:
+export const trainingData = { 
+  content: `
+    <p>Alpha Mead Facilities provides integrated Facility Management services to diverse clients across sectors.</p>
+  `,
+  leadership: [
+    {
+      name: "John Doe",
+      position: "Managing Director, AMF",
+      image: "/images/services/fm/john-doe.jpg",
+      bio: "John leads the FM division with over 15 years of experience in operations and strategy.",
+    },
+  ],
+  services: [
+    "Maintenance Services",
+    "Energy Management",
+    "Cleaning & Janitorial Services",
+  ],
+  brochureUrl: "/brochures/amf-brochure.pdf",
+  address: "Lagos, Nigeria",
+  email: "info@alphamead.com",
+  phone: "+234 800 123 4567",
+};
+export const realEstateData = { 
+  content: `
+    <p>Alpha Mead Facilities provides integrated Facility Management services to diverse clients across sectors.</p>
+  `,
+  leadership: [
+    {
+      name: "John Doe",
+      position: "Managing Director, AMF",
+      image: "/images/services/fm/john-doe.jpg",
+      bio: "John leads the FM division with over 15 years of experience in operations and strategy.",
+    },
+  ],
+  services: [
+    "Maintenance Services",
+    "Energy Management",
+    "Cleaning & Janitorial Services",
+  ],
+  brochureUrl: "/brochures/amf-brochure.pdf",
+  address: "Lagos, Nigeria",
+  email: "info@alphamead.com",
+  phone: "+234 800 123 4567",
+ };
+export const powerData = { 
+  content: `
+    <p>Alpha Mead Facilities provides integrated Facility Management services to diverse clients across sectors.</p>
+  `,
+  leadership: [
+    {
+      name: "John Doe",
+      position: "Managing Director, AMF",
+      image: "/images/services/fm/john-doe.jpg",
+      bio: "John leads the FM division with over 15 years of experience in operations and strategy.",
+    },
+  ],
+  services: [
+    "Maintenance Services",
+    "Energy Management",
+    "Cleaning & Janitorial Services",
+  ],
+  brochureUrl: "/brochures/amf-brochure.pdf",
+  address: "Lagos, Nigeria",
+  email: "info@alphamead.com",
+  phone: "+234 800 123 4567",
+};
+export const propTechData = { 
+  content: `
+    <p>Alpha Mead Facilities provides integrated Facility Management services to diverse clients across sectors.</p>
+  `,
+  leadership: [
+    {
+      name: "John Doe",
+      position: "Managing Director, AMF",
+      image: "/images/services/fm/john-doe.jpg",
+      bio: "John leads the FM division with over 15 years of experience in operations and strategy.",
+    },
+  ],
+  services: [
+    "Maintenance Services",
+    "Energy Management",
+    "Cleaning & Janitorial Services",
+  ],
+  brochureUrl: "/brochures/amf-brochure.pdf",
+  address: "Lagos, Nigeria",
+  email: "info@alphamead.com",
+  phone: "+234 800 123 4567",
+};
+export const healthcareData = { content: `
+    <p>Alpha Mead Facilities provides integrated Facility Management services to diverse clients across sectors.</p>
+  `,
+  leadership: [
+    {
+      name: "John Doe",
+      position: "Managing Director, AMF",
+      image: "/images/services/fm/john-doe.jpg",
+      bio: "John leads the FM division with over 15 years of experience in operations and strategy.",
+    },
+  ],
+  services: [
+    "Maintenance Services",
+    "Energy Management",
+    "Cleaning & Janitorial Services",
+  ],
+  brochureUrl: "/brochures/amf-brochure.pdf",
+  address: "Lagos, Nigeria",
+  email: "info@alphamead.com",
+  phone: "+234 800 123 4567", };
+export const amrepData = { 
+  content: `
+    <p>Alpha Mead Facilities provides integrated Facility Management services to diverse clients across sectors.</p>
+  `,
+  leadership: [
+    {
+      name: "John Doe",
+      position: "Managing Director, AMF",
+      image: "/images/services/fm/john-doe.jpg",
+      bio: "John leads the FM division with over 15 years of experience in operations and strategy.",
+    },
+  ],
+  services: [
+    "Maintenance Services",
+    "Energy Management",
+    "Cleaning & Janitorial Services",
+  ],
+  brochureUrl: "/brochures/amf-brochure.pdf",
+  address: "Lagos, Nigeria",
+  email: "info@alphamead.com",
+  phone: "+234 800 123 4567",
+};
+
 
 export const cameroonData = [
   {

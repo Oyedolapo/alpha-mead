@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import { contactSocialLinks } from "../../constants/data";
+import { MapPin, Navigation } from "lucide-react";
 
 const GeneralEnquiryForm = () => {
   const [subject, setSubject] = useState("");
@@ -21,14 +22,12 @@ const GeneralEnquiryForm = () => {
     <section className="bg-[#EEF2F3] py-20 px-6 md:px-10 font-roboto w-full">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full items-start">
         {/* Left Side — Contact Info */}
-        <div className="md:pl-16">
-          <h4 className="text-green-600 tracking-widest font-semibold uppercase mb-2">
-            Contact Us
-          </h4>
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+        <div className="md:pl-16 space-y-5">
+          <h4 className="text-green-600 tracking-widest font-semibold uppercase mb-2"> General Enquiries </h4>
+          <h2 className="text-3xl font-bold text-gray-900">
             How to Reach Us
           </h2>
-          <p className="text-gray-700 mb-3 leading-relaxed text-base">
+          <p className="text-gray-700 leading-relaxed text-base">
             Please fill out the contact form or email us at{" "}
             <a
               href="mailto:enquiry@alphamead.com"
@@ -36,12 +35,32 @@ const GeneralEnquiryForm = () => {
             >
               enquiry@alphamead.com
             </a>
-            .
+            . An Alpha Mead representative will be in touch with you shortly.
           </p>
-          <p className="text-gray-700 text-base mb-6 leading-relaxed">
-            An Alpha Mead representative will be in touch with you about your
-            request shortly.
-          </p>
+
+          {/* 📍 Address Card (replaces map) */}
+          <div className="bg-white rounded-2xl shadow-md border border-gray-200 p-6 -mx-3">
+            <div className="flex items-start gap-2">
+              <MapPin className="text-green-600 mt-1" size={22} />
+              <div>
+                <h3 className="text-base font-semibold text-gray-800">
+                  Alpha Mead Group
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  6 Mobolaji Johnson Avenue, <br />
+                  Ikoyi, Lagos 101222, Nigeria
+                </p>
+                <a
+                  href="https://www.google.com/maps?q=6+Mobolaji+Johnson+Ave,+Ikoyi,+Lagos"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-green-600 font-medium text-sm mt-2 hover:underline"
+                >
+                  <Navigation size={14} /> Get Directions
+                </a>
+              </div>
+            </div>
+          </div>
 
           {/* Social Icons */}
           <div className="flex gap-5 mt-6 flex-wrap">
@@ -80,7 +99,7 @@ const GeneralEnquiryForm = () => {
             />
           </div>
 
-          {/* Main Subject Dropdown */}
+          {/* Subject Dropdown */}
           <select
             value={subject}
             onChange={(e) => {
@@ -94,27 +113,13 @@ const GeneralEnquiryForm = () => {
             <option value="training">Training Services</option>
             <option value="real-estate">Real Estate Development</option>
             <option value="power-solutions">Power Solutions</option>
-            <option value="proptech">
-              Property Technology Solutions (PROPTECH)
-            </option>
+            <option value="eye-on-site">EyeOnSite</option>
+            <option value="call2fix">Call2Fix</option>
+            <option value="alpha-cmmms">Alpha CMMS</option>
+            <option value="security-management">Security Management System</option>
             <option value="healthcare">Healthcare Management</option>
+            <option value="healthcare">AlphaMead Real Estate Partners (AMREP)</option>
           </select>
-
-          {/* Conditional Sub-dropdown */}
-          {subject === "proptech" && (
-            <select
-              value={subOption}
-              onChange={(e) => setSubOption(e.target.value)}
-              className="p-4 bg-white border border-gray-200 rounded-md w-full text-gray-600 focus:ring-2 focus:ring-green-500 outline-none"
-            >
-              <option value="">Select Proptech Service</option>
-              {proptechOptions.map((opt, index) => (
-                <option key={index} value={opt.toLowerCase().replace(/\s+/g, "-")}>
-                  {opt}
-                </option>
-              ))}
-            </select>
-          )}
 
           {/* Message */}
           <textarea

@@ -1,5 +1,5 @@
 import React from "react";
-import { AboutUs, AltPower, Amrep, BFM, BuyProperty, Call2Fix, CaseStudyDetail, Cmms, CommercialCS, CommercialDetail, CommercialFM, ContactUs, Eaas, ElectricalSystems, EyeOnSite, FacilityManagement, FFM, FMP, Health, Home, IndustrialFM, InstitutionalFM, InterBusiness, InterBusinessCaseStudies, LeadershipDetails, PFM, PowerCS, PowerDetail, PowerSolutions, PropTech, RealEstate, RealEstateCS, RealEstateDetail, ResidentialCS, ResidentialDetail, ResidentialFM, Security, TrainingCS, TrainingDetail, TrainingServices, UtilityBilling } from "./pages";
+import { AboutUs, AltPower, Amrep, BFM, BuyProperty, Call2Fix, CaseStudyDetail, Cmms, CommercialCS, CommercialDetail, CommercialFM, ContactUs, Eaas, ElectricalSystems, EyeOnSite, FacilityManagement, FFM, FMP, Health, Home, IndustrialFM, InstitutionalFM, InterBusiness, InterBusinessCaseStudies, LeadershipDetails, MediaEvents, OurServices, PFM, PowerCS, PowerDetail, PowerSolutions, PropTech, RealEstate, RealEstateCS, RealEstateDetail, ResidentialCS, ResidentialDetail, ResidentialFM, Security, TrainingCS, TrainingDetail, TrainingServices, UtilityBilling } from "./pages";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import About from "./components/AMREP/About";
@@ -16,6 +16,7 @@ const App = () => {
         <Route path="/international-business" element={<InterBusiness />}/>
         <Route path="/international-business/case-studies" element={<InterBusinessCaseStudies />} />
         <Route path="/international-business/case-studies/:id" element={<CaseStudyDetail />} />
+        <Route path="/our-services" element={<OurServices />}/>
         <Route path="/services/facilities-management" element={<FacilityManagement />}/>
         <Route path="/facility/residential" element={<ResidentialFM />}/>
         <Route path="/residential/case-studies" element={<ResidentialCS />} />
@@ -53,6 +54,7 @@ const App = () => {
         <Route path="/amrep/contact" element={<Contact />}/>
         <Route path="/amrep/"/>
         <Route path="/buy-property" element={<BuyProperty />}/>
+        <Route path="/media-and-events" element={<MediaEvents />}/>
         <Route path="contact-us" element={<ContactUs />}/>
       </Routes>
     </Router>

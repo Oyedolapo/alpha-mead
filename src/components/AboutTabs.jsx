@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
-import { Awards, CorporateManagement, CorporatePolicies, CustomerTestimonials, OurLeadership, WhoWeAre } from "../components";
+import { Awards, CorporateManagement, CorporatePolicies, CustomerTestimonials, OurLeadership, StrategicPartnership, WhoWeAre } from "../components";
 
 const AboutTabs = ({ initialTab = 0 }) => {
     const location = useLocation();
@@ -15,6 +15,7 @@ const AboutTabs = ({ initialTab = 0 }) => {
         { title: "Our Leadership", component: <OurLeadership /> },
         { title: "Corporate Structures", component: <CorporateManagement /> },
         { title: "Corporate Policies", component: <CorporatePolicies /> },
+        { title: "Strategic Partnerships", component: <StrategicPartnership />},
         { title: "Customer Testimonials", component: <CustomerTestimonials /> },
         { title: "Awards & Recognitions", component: <Awards /> },
     ];
