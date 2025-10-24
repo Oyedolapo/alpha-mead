@@ -358,9 +358,9 @@ export const ghanaData = [
     secondContent: `Our proven track record in Ghana underscores our reputation as a trusted partner for multinational corporations and local businesses alike. By combining global best practices with local expertise, we continue to set the benchmark for professional facility management in Ghana.`,
     leadership: [
       {
-        name: "Jane Doe",
+        name: "Jane Doris",
         position: "Country Manager",
-        image: femi,
+        image: Oluwande,
         bio: "Jane oversees all operations and strategic partnerships in Ghana.",
       },
       {
@@ -431,7 +431,7 @@ export const realEstateData = {
   `,
   leadership: [
     {
-      name: "John Doe",
+      name: "John Samson",
       position: "Managing Director, AMF",
       image: "/images/services/fm/john-doe.jpg",
       bio: "John leads the FM division with over 15 years of experience in operations and strategy.",
